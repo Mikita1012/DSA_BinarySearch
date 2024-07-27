@@ -2,12 +2,16 @@ public class CielOfNum {
     public static void main(String[] args) {
 //        int[] arr = {2, 3, 5, 9, 14, 16, 18};
         int[] arr = {1, 2, 8, 10, 10, 12, 19};
-        int target = 3;
+        int target = 21;
         int ans = ceil(arr, target);
         System.out.println(arr[ans]);
 
     }
     static int ceil(int[] arr, int target) {
+//         what if target is greater than the greatest number number in the array
+//        if(target > arr[arr.length - 1]) {
+//            return -1;
+//        }
         int start = 0;
         int end  = arr.length - 1;
 
