@@ -1,13 +1,13 @@
-public class BasicBS {
+public class CielOfNum {
     public static void main(String[] args) {
-        int[] arr = {-18, -8, -6, -4, 2, 4, 6, 8, 9, 12, 14, 16, 18, 20};
-        int target = 21;
-        int ans = binarySearch(arr, target);
-        System.out.println(ans);
+//        int[] arr = {2, 3, 5, 9, 14, 16, 18};
+        int[] arr = {1, 2, 8, 10, 10, 12, 19};
+        int target = 3;
+        int ans = ceil(arr, target);
+        System.out.println(arr[ans]);
+
     }
-//    return index
-//    return -1 if element not present
-    static int binarySearch(int[] arr, int target) {
+    static int ceil(int[] arr, int target) {
         int start = 0;
         int end  = arr.length - 1;
 
@@ -23,6 +23,7 @@ public class BasicBS {
             }
         }
 
-        return -1;
+        return start;
     }
 }
+

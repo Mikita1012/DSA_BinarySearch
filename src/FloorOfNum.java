@@ -1,13 +1,14 @@
-public class BasicBS {
+public class FloorOfNum {
     public static void main(String[] args) {
-        int[] arr = {-18, -8, -6, -4, 2, 4, 6, 8, 9, 12, 14, 16, 18, 20};
-        int target = 21;
-        int ans = binarySearch(arr, target);
-        System.out.println(ans);
+//        int[] arr = {2, 3, 5, 9, 14, 16, 18};
+        int[] arr = {-18, -8, -6, -4, 2, 4, 6, 8, 9, 12, 14, 16, 18, 20};;
+        int target = 10;
+        int ans = floor(arr, target);
+        System.out.print(arr[ans]+ " ");
+        System.out.print(ans);
     }
-//    return index
-//    return -1 if element not present
-    static int binarySearch(int[] arr, int target) {
+
+    static int floor(int[] arr, int target) {
         int start = 0;
         int end  = arr.length - 1;
 
@@ -23,6 +24,6 @@ public class BasicBS {
             }
         }
 
-        return -1;
+        return end;
     }
 }
